@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-i18n",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "crowdin:upload": "crowdin upload sources",
+    "crowdin:download": "crowdin download"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "i18n": "^0.15.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/i18n": "^0.13.12",
+    "@types/node": "^22.10.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "global-messages": {
+        "success": {
+            "login": "کاربر {{username}} با موفقیت وارد شد"
+        }
+    }
+}

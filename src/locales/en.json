@@ -1,0 +1,8 @@
+{
+	"global-messages": {
+		"success": {
+			"login": "user {{username}} is successfully logged in"
+		}
+	},
+	"welcome_message": "welcome_message"
+}

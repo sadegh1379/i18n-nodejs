@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                  // هدف ECMAScript جدید
+    "module": "CommonJS",                // استفاده از ماژول‌های CommonJS برای Node.js
+    "outDir": "./dist",                  // محل ذخیره فایل‌های کامپایل‌شده
+    "rootDir": "./src",                  // محل فایل‌های TypeScript
+    "esModuleInterop": true,             // پشتیبانی از import/export در ماژول‌ها
+    "skipLibCheck": true,                // نادیده گرفتن چک کردن کتابخانه‌ها برای سرعت بیشتر
+    "forceConsistentCasingInFileNames": true,
+    "strict": true                        // فعال‌سازی چک‌های دقیق TypeScript
+  },
+  "resolveJsonModule": true,
+  "typeRoots": ["./node_modules/@types", "./src/types"],
+  "include": [
+    "src/**/*"                            // شامل تمامی فایل‌های TypeScript در پوشه src
+  ],
+  "exclude": [
+    "node_modules",                       // نادیده گرفتن پوشه node_modules
+    "dist"                                // نادیده گرفتن پوشه dist (خروجی کامپایل‌شده)
+  ]
+}
