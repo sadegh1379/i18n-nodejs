@@ -1,15 +1,13 @@
 import i18n from "i18n";
 import path from "path";
 
-// Configure i18n
 i18n.configure({
-  locales: ["en", "es", "fa"], // Define supported languages
-  directory: path.join(path.resolve(), "/src/locales"), // Directory for locale files
-  defaultLocale: "en", // Default language
-  objectNotation: true, // Enable object notation for translation keys
-  // cookie: "lang", 
+  locales: ["en", "es", "fa"],
+  directory: path.join(path.resolve(), "/src/locales"),
+  defaultLocale: "en",
+  objectNotation: true,
   register: global,
-  queryParameter:"lang"
+  queryParameter: "lang"
 });
 
 export default i18n;
