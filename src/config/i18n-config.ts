@@ -1,15 +1,23 @@
-import i18n from "i18n";
+import i18next from "i18next";
 import path from "path";
+import i18nextFsBackend from "i18next-fs-backend";
+import i18nextMiddleware from 'i18next-http-middleware';
 
-// Configure i18n
-i18n.configure({
-  locales: ["en", "es", "fa"], // Define supported languages
-  directory: path.join(path.resolve(), "/src/locales"), // Directory for locale files
-  defaultLocale: "en", // Default language
-  objectNotation: true, // Enable object notation for translation keys
-  // cookie: "lang", 
-  register: global,
-  queryParameter:"lang"
-});
+i18next
+  .use(i18nextMiddleware.LanguageDetector)
+  .use(i18nextFsBackend)
+  .init({
+    lng: "en",
+    fallbackLng: "en",
+    preload: ["en", "es", "fa"],
+    ns: ["translation"],
+    defaultNS: "translation",
+    backend: {
+      loadPath: path.resolve(__dirname, "../locales/{{lng}}.json"),
+    },
+    interpolation: {
+      escapeValue: false,
+    },
+  });
 
-export default i18n;
+export default i18next;

@@ -1,7 +1,15 @@
 {
-    "global-messages": {
+    "welcome_message": "خوش آمدید، {{username}}!",
+    "name": "صادق",
+    "globalMessages": {
         "success": {
             "login": "کاربر {{username}} با موفقیت وارد شد"
         }
+    },
+    "greeting": "سلام، {{name}}!",
+    "farewell": "خداحافظ، {{name}}!",
+    "error": {
+        "not_found": "متاسفیم، صفحه‌ای که دنبالش می‌گردید وجود ندارد.",
+        "server_error": "اوه! مشکلی در سرور پیش آمده است."
     }
 }

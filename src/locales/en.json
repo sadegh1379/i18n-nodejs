@@ -1,8 +1,15 @@
 {
-	"global-messages": {
+	"welcome_message": "Welcome, {{username}}!",
+	"name": "Sadegh",
+	"globalMessages": {
 		"success": {
-			"login": "user {{username}} is successfully logged in"
+			"login": "User {{username}} is successfully logged in"
 		}
 	},
-	"welcome_message": "welcome_message"
+	"greeting": "Hello, {{name}}!",
+	"farewell": "Goodbye, {{name}}!",
+	"error": {
+		"not_found": "Sorry, the page you are looking for does not exist.",
+		"server_error": "Oops! Something went wrong on the server."
+	}
 }
