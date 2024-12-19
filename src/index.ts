@@ -12,7 +12,7 @@ app.use(languageMiddleware);
 
 app.get('/', (req: Request, res: Response) => {
 
-  const message = req.t("name");
+  const message = req.t("name")
     
 
   res.json({ message });
