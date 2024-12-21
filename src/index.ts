@@ -12,10 +12,13 @@ app.use(languageMiddleware);
 
 app.get('/', (req: Request, res: Response) => {
 
-  const message = req.t("name")
-    
 
-  res.json({ message });
+  // if (req.i18n.language === "fa") {
+  //   res.json({ message: "lang is fa" })
+  // }
+
+
+  res.json({ message: req.t("error.not_found") });
 });
 
 app.listen(4000, () => {
