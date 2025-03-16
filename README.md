@@ -14,8 +14,13 @@ In some projects, I’ve seen that everything was handled through a database, an
 - More features, such as loading translations from the server or separate JSON files.
 - Best for larger projects where flexibility and scalability are needed.
 
-## How to Use
+## Start with i18n
+- [GET BRANCK](https://github.com/sadegh1379/i18n-nodejs/tree/with-i18n)
 
+## Start with i18n next
+- [GET BRANCK](https://github.com/sadegh1379/i18n-nodejs/tree/with-i18n-next)
+
+## How to Use
 To use this configuration, all you need is a middleware that reads the `language-type` from the request headers and sets it. After that, you can easily use translations in your application using `t()`.
 
 Example:
